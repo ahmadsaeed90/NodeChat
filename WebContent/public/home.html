@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us" />
+        <title>Chat Application</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+       <!--  <script src="https://cdn.socket.io/socket.io-1.0.0.js"></script> -->
+       <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="js/AjaxHelper.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/chat.js"></script>
+        <script type="text/javascript" src="js/ViewRenderer.js"></script>
+        <script type="text/javascript" src="js/Utils.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="logo">
+               		Chat Pro
+                </div>
+                <div id="navigationbar">
+                    <ul>
+                        <li><a href="login.html" id="logOutLink">Log Out</a></li>
+                    </ul>
+                </div>
+                <div class="welcome-msg">Welcome <span class="display-name"></span></div>
+            </div>
+
+            <div id="content">
+            	<div id="usersListWrapper">
+            		<br/>
+            		<div id="usersListArea">
+		           		<div id="usersList">
+		           		</div>
+            		</div>
+            	</div>
+            
+            	<div class="chat-window" data-username="" data-isgroup="no" data-groupmembers="" data-groupid="" data-userid="">
+            		<div class="chatting-with">
+            			<div class="name">
+            			</div>
+            			<div class="chat-options">
+	            			<img src="images/clear_chat_history.png" class="chat-option-icon clear-chat-history"
+	            				title="Clear Chat History" />
+            				<img src="images/exit_group.png" class="chat-option-icon exit-group"
+            					 title="Leave Group" />
+            				<img src="images/icon-add-user-to-chat.png" class="chat-option-icon add-user-to-chat"
+            					 title="Add user to chat" />
+            			</div>
+            		</div>
+            		<div class="chat-history">
+            		</div>
+            		<div class="newChatMsgArea">
+            			<textarea class="new-chat-msg"></textarea>
+            			<div class="btns">
+            				<button class="send-msg-btn btn" disabled="disabled">Send</button>
+            			</div>
+            		</div>
+            	</div>
+            
+            </div>
+            <div id="footer">
+                <p>
+					&copy; Copyright 2015-2016
+                </p>
+            </div>   				
+
+        </div>
+
+
+    </body>
+
+
+</html>

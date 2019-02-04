@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us" />
+        <title>Chat Application</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+        <!-- <script src="https://cdn.socket.io/socket.io-1.0.0.js"></script> -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="js/AjaxHelper.js"></script>
+        <script type="text/javascript" src="js/authenticate.js"></script>
+        <script type="text/javascript" src="js/Utils.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="logo">
+               		Chat Pro
+                </div>
+                <div id="navigationbar">
+                    <ul>
+                        <li><a href="login.html" class="current">Log In</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content">
+            	<br/>
+				<fieldset class="login-form">
+					<legend>Please enter your username and password:</legend>
+					<form method="POST" enctype="multipart/form-data" action="/Login" id="loginForm">
+						<table>
+							<tr>
+								<td>Username:</td>
+								<td><input type="text" id="username" name="username" value="u1" /></td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td><input type="password" id="password" name="password" value="test"/></td>
+							</tr>
+							<tr>
+								<td colspan="2" id="msg" class="error-msg">
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="button" id="login" class="btn" value="Log In"  /></td>
+							</tr>
+						</table>
+					</form>
+				</fieldset>
+            </div>
+            <div id="footer">
+                <p>
+					&copy; Copyright 2015-2016
+                </p>
+            </div>   				
+
+        </div>
+
+
+    </body>
+
+
+</html>

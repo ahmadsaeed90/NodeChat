@@ -1,0 +1,12 @@
+{
+  "name": "Chat Application",
+  "version": "0.0.1",
+  "description": "Chat Application",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.10.2",
+    "multer": "~0.1.6",
+    "mysql": "^2.5.4",
+    "socket.io": "^1.3.6"
+  }
+}
